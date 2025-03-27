@@ -12,14 +12,14 @@ export default [
     ...tsEslint.configs.stylisticTypeChecked,
     ...fixupConfigRules(pluginReactConfig),
     {
-        ignores: [ "**/dist", "**/node_modules" ],
+        ignores: ["**/dist", "**/node_modules"],
     },
     {
         languageOptions: {
             ecmaVersion: "latest",
             sourceType: "module",
             parserOptions: {
-                project: [ "./tsconfig.json" ],
+                project: ["./tsconfig.json"],
             },
         },
         plugins: {
@@ -29,11 +29,11 @@ export default [
         },
         rules: {
             // === stylistic ===
-            "@stylistic/jsx-quotes": [ "error", "prefer-double" ],
-            "@stylistic/member-delimiter-style": [ "error", { multiline: { delimiter: "semi" }, singleline: { delimiter: "semi" } } ],
+            "@stylistic/jsx-quotes": ["error", "prefer-double"],
+            "@stylistic/member-delimiter-style": ["error", { multiline: { delimiter: "semi" }, singleline: { delimiter: "semi" } }],
             "@stylistic/no-tabs": "error",
-            "@stylistic/quotes": [ "error", "double", { avoidEscape: true } ],
-            "@stylistic/semi": [ "error", "always" ],
+            "@stylistic/quotes": "off",
+            "@stylistic/semi": ["error", "always"],
 
             // === imports ===
             "import/extensions": ["error", "ignorePackages", { ts: "never", tsx: "never" }], // require .js
@@ -63,7 +63,7 @@ export default [
             "unused-imports/no-unused-imports": "error",
 
             // === typescript ===
-            "@typescript-eslint/consistent-type-definitions": [ "error", "type" ],
+            "@typescript-eslint/consistent-type-definitions": ["error", "type"],
             "@typescript-eslint/no-confusing-void-expression": "off",
             "@typescript-eslint/no-floating-promises": "off",
             "@typescript-eslint/no-inferrable-types": "off",
@@ -72,8 +72,8 @@ export default [
             "@typescript-eslint/no-non-null-assertion": "off",
             "@typescript-eslint/no-unnecessary-condition": "off",
             "@typescript-eslint/no-unnecessary-type-parameters": "off",
-            "@typescript-eslint/no-unused-expressions": [ "error", { allowShortCircuit: true, allowTernary: true } ],
-            "@typescript-eslint/no-unused-vars": [ "error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" } ],
+            "@typescript-eslint/no-unused-expressions": ["error", { allowShortCircuit: true, allowTernary: true }],
+            "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" }],
             // "@typescript-eslint/no-unused-expressions": "off",
             // "@typescript-eslint/no-unused-vars": "off",
             "@typescript-eslint/prefer-nullish-coalescing": "off",
