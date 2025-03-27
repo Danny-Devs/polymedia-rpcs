@@ -7,7 +7,7 @@ import { PageNotFound } from './PageNotFound';
 import './styles/.shared.app.less';
 import './styles/App.less';
 
-/* AppRouter */
+/* AppRouter hi */
 
 export const AppRouter: React.FC = () => {
   return (
