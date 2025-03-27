@@ -1,44 +1,52 @@
 {
-    "private": true,
-    "version": "0.0.0",
-    "name": "@polymedia/rpcs-web",
-    "author": "@juzybits (https://polymedia.app)",
-    "homepage": "https://rpcs.polymedia.app",
-    "description": "Find the fastest Sui RPC for you",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/juzybits/polymedia-rpcs"
-    },
-    "keywords": [],
-    "scripts": {
-        "build": "vite build",
-        "clean": "rm -rf dist/ node_modules/ .turbo/ .wrangler/",
-        "deploy-dev": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-rpcs --branch dev",
-        "deploy-prod": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-rpcs --branch main",
-        "dev": "vite",
-        "host": "vite --host",
-        "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0",
-        "preview": "pnpm build && vite preview",
-        "typecheck": "tsc -b"
-    },
-    "dependencies": {
-        "@mysten/sui": "^1.21.2",
-        "@polymedia/suitcase-core": "^0.0.47",
-        "@polymedia/suitcase-react": "^0.0.47",
-        "normalize.css": "^8.0.1",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
-        "react-router-dom": "^7.2.0"
-    },
-    "devDependencies": {
-        "@types/react": "^18.3.18",
-        "@types/react-dom": "^18.3.5",
-        "@vitejs/plugin-react-swc": "^3.8.0",
-        "less": "^4.2.2",
-        "vite": "^6.2.0",
-        "wrangler": "^3.109.3"
-    },
-    "type": "module",
-    "sideEffects": false
+  "private": true,
+  "version": "0.0.0",
+  "name": "@polymedia/rpcs-web",
+  "author": "@juzybits (https://polymedia.app)",
+  "homepage": "https://rpcs.polymedia.app",
+  "description": "Find the fastest Sui RPC for you",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juzybits/polymedia-rpcs"
+  },
+  "keywords": [],
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf dist/ node_modules/ .turbo/ .wrangler/",
+    "deploy-dev": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-rpcs --branch dev",
+    "deploy-prod": "pnpm build && wrangler pages deploy dist/ --project-name polymedia-rpcs --branch main",
+    "dev": "vite",
+    "host": "vite --host",
+    "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0",
+    "preview": "pnpm build && vite preview",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mysten/sui": "^1.21.2",
+    "@polymedia/suitcase-core": "^0.0.47",
+    "@polymedia/suitcase-react": "^0.0.47",
+    "chart.js": "^4.4.1",
+    "framer-motion": "^10.16.16",
+    "normalize.css": "^8.0.1",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^7.2.0",
+    "recharts": "^2.10.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "less": "^4.2.2",
+    "vite": "^6.2.0",
+    "wrangler": "^3.109.3"
+  },
+  "type": "module",
+  "sideEffects": false
 }
