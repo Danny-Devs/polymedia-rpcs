@@ -31,15 +31,18 @@
     "@polymedia/suitcase-react": "^0.0.47",
     "chart.js": "^4.4.1",
     "framer-motion": "^10.16.16",
+    "leaflet": "^1.9.4",
     "normalize.css": "^8.0.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-icons": "^4.12.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^7.2.0",
     "recharts": "^2.10.3"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.8",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react-swc": "^3.8.0",
